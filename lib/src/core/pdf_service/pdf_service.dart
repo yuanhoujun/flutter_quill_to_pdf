@@ -380,19 +380,20 @@ class PdfService extends PdfConfigurator<Delta, pw.Document> {
   ) async {
     if (spans.isEmpty) return;
     final double spacing = (spans.firstOrNull?.style?.lineSpacing ?? 1.0);
+
     contentPerPage.add(
       pw.Directionality(
         textDirection: directionality,
         child: pw.Padding(
           padding: pw.EdgeInsetsDirectional.only(
-            bottom: spacing.resolvePaddingByLineHeight(),
+            bottom: spacing
           ),
           child: pw.RichText(
             softWrap: true,
             overflow: pw.TextOverflow.span,
             textDirection: directionality,
             text: pw.TextSpan(
-              children: spans,
+              children: spans
             ),
           ),
         ),
