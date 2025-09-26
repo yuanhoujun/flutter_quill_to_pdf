@@ -1,3 +1,13 @@
+# 2.3.9
+
+* Feat: support for apply striketrough style on checked elements and customize them by @CatHood0 in [#37](https://github.com/CatHood0/flutter_quill_to_pdf/pull/37)
+
+# 2.3.8
+
+* Chore: moved `http` package to the example app.
+* Chore: updated dependencies to fix parsing issues.
+* Chore(documentation): removed unnecessary step in `CONTRIBUTING` guide.
+
 # 2.3.7
 
 * Fix: themeData on PDF creation by @Faizan-26 in https://github.com/CatHood0/flutter_quill_to_pdf/pull/28
